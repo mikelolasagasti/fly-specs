@@ -23,6 +23,8 @@ License:        MPLv2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
+BuildRequires:  golang(github.com/stretchr/testify)
+
 %description
 %{common_description}
 
