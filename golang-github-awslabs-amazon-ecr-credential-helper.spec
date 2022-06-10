@@ -3,6 +3,7 @@
 
 # https://github.com/awslabs/amazon-ecr-credential-helper
 %global goipath         github.com/awslabs/amazon-ecr-credential-helper
+%global commit          8b0f652990642817f11cd1dffb06d50a735ea251
 Version:                0.6.0
 
 %gometa
