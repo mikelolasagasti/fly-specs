@@ -47,7 +47,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 
 %if %{with check}
 %check
-%gocheck -d pkg/v1/google
+%gocheck -d pkg/v1/google -d pkg/v1/tarball
 %endif
 
 %files
