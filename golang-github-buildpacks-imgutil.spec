@@ -24,6 +24,8 @@ License:        ASL 2.0
 URL:            %{gourl}
 Source0:        %{gosource}
 
+BuildRequires:  golang(github.com/sclevine/spec)
+
 %description
 %{common_description}
 
@@ -41,7 +43,8 @@ rm -rf tools/bcdhive_generator
 
 %if %{with check}
 %check
-%gocheck
+# require Docker
+%gocheck -d fakes -d local -d remote
 %endif
 
 %gopkgfiles
